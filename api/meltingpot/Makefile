@@ -4,5 +4,13 @@ build:
 	env GOOS=linux go build -ldflags="-s -w" -o bin/world world/main.go
 	env GOOS=linux go build -ldflags="-s -w" -o bin/meltingpot meltingpot/main.go
 
-deploy:
+deploy/dev:
 	sls deploy
+logs/dev:
+	sls logs -f meltingpot -t
+
+deploy:
+	sls deploy -s production
+
+logs:
+	sls logs -f meltingpot -s production -t
