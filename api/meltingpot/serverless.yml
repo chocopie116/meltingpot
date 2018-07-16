@@ -10,8 +10,8 @@
 #    docs.serverless.com
 #
 # Happy Coding!
-
 service: meltingpot
+app: meltingpot
 tenant: chocopie116
 
 # You can pin your service to only deploy with a specific Serverless version
