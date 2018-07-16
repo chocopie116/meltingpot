@@ -56,8 +56,6 @@ package:
 functions:
   hello:
     handler: bin/hello
-  world:
-    handler: bin/world
   meltingpot:
     handler: bin/meltingpot
     events:
